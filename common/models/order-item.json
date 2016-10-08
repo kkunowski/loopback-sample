@@ -12,6 +12,9 @@
     },
     "quantity":{
       "type" : "number"
+    },
+    "deliveryDate": {
+      "type" : "date"
     }
   },
   "validations": [],
