@@ -46,5 +46,10 @@
   },
   "final:after": {
     "strong-error-handler": {}
+  },
+  "files": {
+    "loopback#static": {
+      "params": "$!../client"
+    }
   }
 }

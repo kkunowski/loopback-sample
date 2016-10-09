@@ -1,0 +1,30 @@
+<div layout-gt-md="row" layout-align-gt-md="center" ng-controller="loginCtrl">
+	<div layout="column" layout-align="center" class="login-container main-container">
+		<div layout="row" layout-align="center" >
+		</div>
+		<div layout="row" layout-align="center center">
+			<div flex-gt-md="33" flex-md="50" flex-sm="100" flex-xs="100">
+				<form name="form" ng-submit="login()" role="form">
+					<div layout="column" layout-align="center none" class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+						<label class="form-label" for="username">Username</label>
+						<input name="username" id="username"  ng-model="username" required class="input-dark" type="text">
+					</div>
+					<div layout="column" layout-align="center none" class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+						<label class="form-label" for="password">Password</label>
+						<input name="password" id="password"  ng-model="password" required class="input-dark" type="password">
+					</div>
+					<div ng-show="loginError" class="alert alert-warning ng-binding ng-hide" role="alert">
+						{{loginError}}
+					</div>
+					<div layout="row" layout-align="center center">
+						<div flex-xs="100" flex-sm="100" flex-md="100">
+							<div layout="column" layout-align="center center" >
+								<button type="submit" class="btn btn-yellow" ng-disabled="form.$invalid || dataLoading">LOGIN</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
