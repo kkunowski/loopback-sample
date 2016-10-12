@@ -22,6 +22,10 @@
   "devDependencies": {
     "eslint": "^2.13.1",
     "eslint-config-loopback": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-loopback-sdk-angular": "^0.1.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
     "nsp": "^2.1.0"
   },
   "repository": {
