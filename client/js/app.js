@@ -51,7 +51,21 @@ app.run(function ($location, $rootScope, $route, localStorageService) {
 
 // controllers
 
-angular.module('app').controller('ordersCtrl', function ($scope, $route, User, $location, localStorageService) {
+angular.module('app').controller('ordersCtrl', function ($scope, $route, User, $location, localStorageService, Product) {
+
+	$scope.products = [];
+
+    function getProducts() {
+      Product
+        .find()
+        .$promise
+        .then(function(results) {
+          $scope.products = results;
+        });
+    }
+
+	getProducts();
+
 	$scope.logOut = function(){
 			localStorageService.set('auth',false);
 			localStorageService.set('role',false);

@@ -1,7 +1,7 @@
 {
   "ids": {
     "User": 2,
-    "AccessToken": 1,
+    "AccessToken": 4,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
@@ -13,7 +13,11 @@
     "User": {
       "1": "{\"username\":\"admin\",\"password\":\"$2a$10$7aJHW864gZCge.ox0pY8pOQ7e7qsijw7M5ixwbm4a0gtsYKeZW5EO\",\"email\":\"admin@admin.com\",\"role\":\"admin\",\"id\":1}"
     },
-    "AccessToken": {},
+    "AccessToken": {
+      "gYvxlU5MrOMFSzmYS6nIC6VaAVdaCTA7mj57ZlIqYSZc1Tve7TgmUqhLcLoj3jaG": "{\"id\":\"gYvxlU5MrOMFSzmYS6nIC6VaAVdaCTA7mj57ZlIqYSZc1Tve7TgmUqhLcLoj3jaG\",\"ttl\":1209600,\"created\":\"2016-10-12T12:20:01.341Z\",\"userId\":1}",
+      "rbwPsW8qyo8TuBLukfLstKZBmBKL9xqPQaLrbZKH3Odpk3TnEp0Jzow1miNi4maY": "{\"id\":\"rbwPsW8qyo8TuBLukfLstKZBmBKL9xqPQaLrbZKH3Odpk3TnEp0Jzow1miNi4maY\",\"ttl\":1209600,\"created\":\"2016-10-12T12:21:39.325Z\",\"userId\":1}",
+      "l1rG3TqMfquZVrHQXpMiXoeOsXqPPdbFwK2ewtHu2t2AZb618WSazC7meCGdraCU": "{\"id\":\"l1rG3TqMfquZVrHQXpMiXoeOsXqPPdbFwK2ewtHu2t2AZb618WSazC7meCGdraCU\",\"ttl\":1209600,\"created\":\"2016-10-12T12:22:35.871Z\",\"userId\":1}"
+    },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
